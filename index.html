@@ -30,10 +30,37 @@ h1
  font-family: 'Roboto Mono', monospace;
  color: white;
  font-size: large;
+
 }
 
 
+.line-container {
+            position: relative;
+            width: 100%;
+            height: 2px;
+            background-color: #fff; /* Base line color */
+            overflow: hidden;
+        }
+        
+.glow-line {
+            position: absolute;
+            top: 0;
+            left: -10%; /* Start outside the visible area */
+            width: 15%; /* Width of the glowing part */
+            height: 100%;
+            background: linear-gradient(to right, #ff0000, #1e00ff);
+            box-shadow: 0 0 40px rgb(0, 242, 255), 0 0 40px rgb(1, 251, 255);
+            animation: moveGlow 8s linear infinite;
+        }
 
+        @keyframes moveGlow {
+            0% {
+                left: -15%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
 
       </style>
    </head>
@@ -49,13 +76,29 @@ h1
 <a href=" ">Skills</a>  &nbsp 
 <a href="https://github.com/giordanog1?tab=projects">Github</a>  &nbsp
 <a href=" ">Contact</a>  &nbsp
-<hr>
+<div class="line-container">
+    <div class="glow-line"></div>
 </h1>
 
-<center><p>Hi, i'm Giordano Galarce</p></center>
-<center><p>Software Engineer and Student @ FIU</p></center>
-<center><img src="images/file.jpg" width="100px" height="100px"></center>
-
+<table style="width: 100%; height: 100vh;">
+    <td align="center" valign="middle">
+<p>Hi, i'm <font color="white" style = "text-shadow:  1px 1px 0 rgb(255, 0, 0),   /* Red */
+    2px 2px 0 rgba(255, 51, 0, 0.6),  /* Red-Orange */
+    3px 3px 0 rgba(0, 72, 255, 0.905), /* Orange */
+    4px 4px 0 rgba(9, 124, 255, 0.2), /* Light Orange */
+    5px 5px 0 rgba(255, 204, 0, 0.1), /* Very Light Orange */
+    6px 6px 0 rgba(0, 102, 255, 0.1),  /* Light Blue */
+    7px 7px 0 rgba(0, 0, 255, 0.1);    /* Blue */;">Giordano Galarce</font></p>
+<p>Software Engineer and Student @ <font color="black" style = "text-shadow: 1px 1px 0 rgba(255, 215, 0, 1),   /* Gold */
+    2px 2px 0 rgba(255, 204, 0, 0.8), /* Light Gold */
+    3px 3px 0 rgba(255, 153, 0, 0.6), /* Yellow Orange */
+    4px 4px 0 rgba(255, 102, 0, 0.4), /* Orange */
+    5px 5px 0 rgba(204, 153, 0, 0.2), /* Darker Gold */
+    6px 6px 0 rgba(0, 102, 255, 0.2),  /* Light Blue */
+    7px 7px 0 rgba(0, 0, 255, 0.1);">FIU</font></p>
+<img src="images/file.jpg" width="100px" height="100px">
+</td>
+</table>
 
    </body>
 </html>
