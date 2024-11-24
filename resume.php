@@ -2,8 +2,7 @@
 <html lang = en>
 
 <head>
-
-
+<title>Resume</title>
 
 </head>
 
