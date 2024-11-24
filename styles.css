@@ -11,12 +11,12 @@ a {
     text-decoration: none;
   }
   
-  a:hover 
+a:hover 
   {
   text-decoration: underline dotted red;
   }
   
-  h1
+h1
   {
    text-align: left;
    font-family: 'Roboto Mono', monospace;
@@ -26,7 +26,7 @@ a {
   }
   
   
-  .line-container {
+.line-container {
               position: relative;
               width: 100%;
               height: 1px;
@@ -34,7 +34,7 @@ a {
               overflow: hidden;
           }
           
-  .glow-line {
+.glow-line {
               position: absolute;
               top: 0;
               left: -10%; /* Start outside the visible area */
