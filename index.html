@@ -1,105 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CyberSecure Academy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    
+    <nav>
+        <a href="index.html" class="header-btn">Home</a>
+        <a href="about.html" class="header-btn">About</a>
+    </nav>
 
-   <head>
-      <title>Home</title>
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-      <style>
+  </header>
 
+  <section class="hero">
+    <img src="logo.png" alt="CyberSafeGuard Academy Logo" class="hero-logo">
+    <h2>Welcome to CyberSafeGuard Academy</h2>
+    <p>Learn cybersecurity step by step with interactive modules and quizzes.</p>
+  </section>
 
-a {
-  text-decoration: none;
-  }
+  <section class="modules">
+    <div class="module-card">
+      <h3>Module 1: Introduction to Cybersecurity</h3>
+      <p>Understand the basics of cybersecurity, threats, and why security matters.</p>
+      <button onclick="location.href='module1.html'">Start Module</button>
+    </div>
+    <div class="module-card">
+      <h3>Module 2: Passwords & Authentication</h3>
+      <p>Learn how to create strong passwords and the importance of multi-factor authentication.</p>
+      <button onclick="location.href='module2.html'">Start Module</button>
+    </div>
+    <div class="module-card">
+      <h3>Module 3: Network Security Fundamentals</h3>
+      <p>Explore firewalls, VPNs, and how to protect your network from attacks.</p>
+      <button onclick="location.href='module3.html'">Start Module</button>
+    </div>
+    <div class="module-card">
+      <h3>Module 4: Phishing & Social Engineering</h3>
+      <p>Recognize common scams and learn strategies to avoid falling victim.</p>
+      <button onclick="location.href='module4.html'">Start Module</button>
+    </div>
+  </section>
 
-a:hover {
-text-decoration: underline dotted red;
-}
+  <footer>
+    <p>&copy; 2025 CyberSafeGuard | Empowering the next generation of cyber professionals</p>
+  </footer>
 
-h1
-{
- text-align: left;
- font-family: 'Roboto Mono', monospace;
- color: white;
- font-size: large;
-
-}
-
-
-.line-container {
-            position: relative;
-            width: 100%;
-            height: 1px;
-            background-color: #fff; /* Base line color */
-            overflow: hidden;
-        }
-        
-.glow-line {
-            position: absolute;
-            top: 0;
-            left: -10%; /* Start outside the visible area */
-            width: 15%; /* Width of the glowing part */
-            height: 100%;
-            background: linear-gradient(to right, #ff0000, #1e00ff);
-            box-shadow: 0 0 40px rgb(0, 242, 255), 0 0 40px rgb(1, 251, 255);
-            animation: moveGlow 8s linear infinite;
-        }
-
-        @keyframes moveGlow {
-            0% {
-                left: -15%;
-            }
-            100% {
-                left: 100%;
-            }
-        }
-
-body
-{
-background-color: black;
-font-family: 'Roboto Mono', monospace;
-color: white;
-text-decoration-style: none;
-font-size: xx-large;
-}
-
-      </style>
-   </head>
-   <body link="white" vlink="white" alink="yellow">
-
-<h1>
-   &nbsp <a href=" ">🏠Home</a> &nbsp 
-   <a href=" ">❓About</a>  &nbsp 
-   <a href="https://github.com/giordanog1?tab=projects">Github</a>  &nbsp
-   <a href=" ">📲Contact</a>  &nbsp
-   <a href="resume.html">📄Resume</a>  &nbsp
-   <a href=" ">💻DevLog</a>  &nbsp
- <div class="line-container">
-     <div class="glow-line"></div>
-</h1>
-
-
-<!--home page-->
-<table style="width: 100%; height: 100vh;">
-    <td align="center" valign="middle">
-      <p>Hi, i'm <font color="white" style = "text-shadow:  1px 1px 0 rgb(255, 0, 0),   /* Red */
-         2px 2px 0 rgba(255, 51, 0, 0.6),  /* Red-Orange */
-         3px 3px 0 rgba(0, 72, 255, 0.905), /* Orange */
-         4px 4px 0 rgba(9, 124, 255, 0.2), /* Light Orange */
-         5px 5px 0 rgba(255, 204, 0, 0.1), /* Very Light Orange */
-         6px 6px 0 rgba(0, 102, 255, 0.1),  /* Light Blue */
-         7px 7px 0 rgba(0, 0, 255, 0.1);    /* Blue */;">Giordano Galarce</font></p>
-      <p>Software Engineer and Student @ <font color="black" style = "text-shadow: 1px 1px 0 rgba(255, 215, 0, 1),   /* Gold */
-         2px 2px 0 rgba(255, 204, 0, 0.8), /* Light Gold */
-         3px 3px 0 rgba(255, 153, 0, 0.6), /* Yellow Orange */
-         4px 4px 0 rgba(255, 102, 0, 0.4), /* Orange */
-         5px 5px 0 rgba(204, 153, 0, 0.2), /* Darker Gold */
-         6px 6px 0 rgba(0, 102, 255, 0.2),  /* Light Blue */
-         7px 7px 0 rgba(0, 0, 255, 0.1);">FIU</font></p>
-   <img src="images/file.jpg" width="100px" height="100px">
-</td>
-</table>
-
-   </body>
+</body>
 </html>

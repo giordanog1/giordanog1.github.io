@@ -1,0 +1,131 @@
+
+    body {
+      font-family: 'Courier New';
+      margin: 0;
+      color: rgb(255, 255, 255);
+      background:#000014;
+    }
+   header {
+  position: fixed;        /* keeps it locked to the viewport */
+  top: 0;                 /* stick to the very top */
+  left: 0;
+  width: 100%;            /* span full width */
+  background: #010110;
+  color: #0bdcd1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;              /* space between title and button */
+  justify-content: flex-start; /* keep everything on the left */
+  z-index: 1000;          /* ensures it sits above other content */
+}
+
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 2px;
+      background: linear-gradient(
+      to left,
+      #0bdcd1,
+      transparent
+      );
+}
+
+
+    nav .header-btn {
+      text-decoration: none;
+      padding: 8px 15px;
+      border: none;                 
+      border-bottom: 2px solid #0bdcd1;
+      color: #fff;
+      background: #01021a;
+      transition: 0.3s;
+   }
+
+   nav .header-btn:hover {
+     background: #0bdcd1;
+     color: #01021a;
+   }
+
+.hero {
+  position: relative;
+  background: url("background.jpg") center/cover no-repeat;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-logo {
+  display: block;              /* allows margin auto */
+  margin: 0 auto 20px;         /* centers horizontally */
+  height: 100px;               /* base size */
+  position: relative;
+  transform: scale(2.5);         /* enlarge */
+  transform-origin: center;    /* grow from the middle */
+}
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 30, 0.7); /* dark blue overlay at 70% opacity */
+  z-index: 1;
+}
+
+.hero h2,
+.hero p {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 10px;
+}
+
+
+    .modules {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .module-card {
+      background:#010110;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .module-card:hover {
+      transform: translateY(-5px);
+    }
+    .module-card h3 {
+      margin-top: 0;
+      color: white;
+    }
+    .module-card p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    .module-card button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      border: 1px solid #0bdcd1;
+      border-radius: 5px; 
+      background:#01021a;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .module-card button:hover {
+      background: #0a66c2;
+    }
+    footer {
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      background: #010110;
+      margin-top: 40px;
+    }
